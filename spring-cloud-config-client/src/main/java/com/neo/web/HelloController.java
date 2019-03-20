@@ -10,6 +10,10 @@ class HelloController {
     @Value("${neo.hello}")
     private String hello;
 
+    /**
+     * http://localhost:8002/hello
+     * @return
+     */
     @RequestMapping("/hello")
     public String from() {
         return this.hello;
